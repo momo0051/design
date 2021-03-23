@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/comment_detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/ripple_effect_white"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dt10"
+        android:paddingEnd="@dimen/dt10"
+        android:paddingBottom="@dimen/dt10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dt10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!--<ImageView
+                android:layout_width="@dimen/d20"
+                android:layout_height="@dimen/d20"
+                android:src="@drawable/ic_user"/>-->
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/dt10"
+                android:src="@drawable/ic_account_icon" />
+
+            <TextView
+                android:id="@+id/idTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dt16"
+                android:text="ID"
+                android:textColor="@color/grey_80"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/time_stamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dt16"
+                android:gravity="end"
+                android:text="2020-12-06 16:13:10"
+                android:textColor="@color/grey_40"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/commentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="@dimen/d8"
+            android:text="Address,Address,Address,Address,Address,AddressAddress,"
+            android:textColor="@color/grey_80"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/comment_detail_layout"
+        android:background="@color/grey_40"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

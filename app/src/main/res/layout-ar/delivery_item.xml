@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/d10"
+    android:layout_marginBottom="@dimen/d10">
+
+
+    <RelativeLayout
+        android:id="@+id/delivery_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/delivery_icon"
+        android:layout_marginStart="@dimen/d10"
+        android:layout_marginEnd="@dimen/d10"
+        android:layout_marginBottom="@dimen/d20"
+        android:background="@drawable/bg_selector_category">
+
+        <RelativeLayout
+            android:id="@+id/titleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:padding="@dimen/d10">
+
+            <ImageView
+                android:id="@+id/ic_location"
+                android:layout_width="@dimen/d24"
+                android:layout_height="@dimen/d24"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/location_pin"
+                app:tint="@color/appColorSearch" />
+
+
+            <TextView
+                android:id="@+id/delivery_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/ic_location"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/item_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/delivery_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_username"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/delivery_item_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_username"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleLayout"
+            android:layout_margin="@dimen/dt14">
+
+            <ImageView
+                android:id="@+id/chat_box"
+                android:layout_width="@dimen/d50"
+                android:layout_height="@dimen/d50"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_btn_blue"
+                android:padding="8dp"
+                android:src="@drawable/messenger_icon" />
+
+
+            <ImageView
+                android:id="@+id/call_icon"
+                android:layout_width="@dimen/d50"
+                android:layout_height="@dimen/d50"
+                android:background="@drawable/bg_btn_blue"
+                android:padding="8dp"
+                android:src="@drawable/phone_call_icon" />
+
+            <ImageView
+                android:id="@+id/whatsapp_icon"
+                android:layout_width="@dimen/d50"
+                android:layout_height="@dimen/d50"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_wtap" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/delivery_icon"
+        android:layout_width="@dimen/d50"
+        android:layout_height="@dimen/d50"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-25dp"
+        android:background="@drawable/icon_blue_bg"
+        android:elevation="@dimen/d10"
+        android:padding="8dp"
+        android:rotationY="180"
+        android:src="@drawable/delivery_icon" />
+
+    <ImageView
+        android:id="@+id/delivery_delete_icon"
+        android:layout_width="@dimen/d25"
+        android:layout_height="@dimen/d25"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:elevation="@dimen/d10"
+        android:src="@drawable/red_cross_icon" />
+
+
+</RelativeLayout>

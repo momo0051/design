@@ -1,0 +1,143 @@
+<resources>
+    <string name="app_name">ZooLife</string>
+    <string name="search">الرجاء إدخال كلمتك الرئيسية</string>
+    <string name="write_message">اكتب رسالتك هنا</string>
+    <string name="category">الفئة</string>
+    <string name="category1">الفئة :</string>
+    <string name="all_categories">اختيار الموقع </string>
+    <string name="dropdown_item1">كل المدن ‎</string>
+    <string name="main_category">Main Category‎</string>
+
+
+    <string name="all_cities">كل المدن</string>
+    <string name="closest">الأقرب</string>
+    <string name="most_recent">الأحدث</string>
+    <string name="favourites">بحث</string>
+    <string name="toolbar_title">Toolbar Title</string>
+    <string name="location">موقعك</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="notif_msg">هذا هو اختبار رسالة سطر واحد للإعلام</string>
+    <string name="notif_date">25th Oct. 2020</string>
+    <string name="posted_on">اليوم</string>
+    <string name="add_image">إضافة صورة</string>
+    <string name="txt_continue">استمرار</string>
+    <string name="title_item">This is test item so le make twio line so that it will fill in it or not ust to check</string>
+    <string name="submit">إضافة</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dog_info">النوع / مالتيز بيور مستوى عالى وشيتزو بيور مستوى عالي ️ الجنس / انثى + ذكر️ العمر / 42يو.</string>
+    <string name="sample_text">الحجم / قزم اطرافه قصيره حجمهم جدا صغيييير ميني السعر 2500 ريال الجرو الواحد للمالتيز.</string>
+
+    <!--    Main Activity-->
+    <string name="message">الرسائل</string>
+    <string name="more">المزيد‎</string>
+    <string name="notification">إشعارات</string>
+    <string name="home">الرئيسية</string>
+
+    <!--    View More Fragment-->
+    <string name="add_ad">أضف إعلان</string>
+    <string name="favourite_ad">المفضلة</string>
+    <string name="my_favourite">المفضل لدي</string>
+    <string name="my_ads">إعلاناتي</string>
+    <string name="change_city">تغيير المدينة</string>
+    <string name="call_us">اتصل بنا</string>
+    <string name="order_delivery">طلب توصيل / نقل</string>
+    <string name="order_vet_consultant">طلب بيطرة</string>
+    <string name="report_missing_pet">بلاغ مفقود</string>
+    <string name="policy_terms">السياسة والشروط</string>
+    <string name="logout">تسجيل خروج</string>
+    <string name="black_list">القائمة السوداء</string>
+    <string name="banned_ads">السلع والاعلانات الممنوعه</string>
+    <string name="spinner_title">Select Category</string>
+
+    <string name="firebase_server_key" translatable="false">AAAAarKgHyI:APA91bEucI6EaFo6UlFyLM7YMqdS1xiXVZYlX7ReH7wDQDUHhDx7NCmcnBu7ti3fDTzrk0TjfQ1Zo0wQyk_fgGBd3DOJ7CFM8VqanY1j6nNAXiFMzjvtjhAH3LWavPAovNMXY9c6z5X7</string>
+
+    <string name="splash_text">عالم الحيوان بين يديك</string>
+    <string name="hi_there">أهلا</string>
+    <string name="we_are_happy">نحن سعداء أن نراكم مرة أخرى من فضلك ,دعنا نسجل الدخول أولا</string>
+    <string name="please_let_sign_up">يسعدنا أن نر أنك تريد الانضمام إلينا من ,دعنا نشترك أولا</string>
+    <string name="next">التالي</string>
+    <string name="welcome_back">مرحبا بعودتك</string>
+    <string name="log_in">تسجيل الدخول</string>
+    <string name="otp_message_1">لقد أرسلنا لك  رمز الوصول عبر الرسائل القصيرة للتحقق من رقم الهاتف المحمول  </string>
+    <string name="otp_message_2">ادخل الرمز هنا </string>
+
+    <string name="about_us_description">وضعنا بين أيديكم منصة زوولايف ليجمع كل ما يخص الحيوانات ويسهل على المستخدمين البحث عن بيع وشراء وغذاء ودواء والعيادات الخاصة ويجمع نخبة من الخبراء والمستشارين ليقدموا افضل النصائح والاستشارات ويضم زوولايف عروض وفعاليات ترفيهيه في عالم الحيوان.</string>
+    <string name="objectives">الأهداف</string>
+    <string name="objective_one">هدفنا الأول هو تقديم وتسهيل الخدمات للعملاء في البحث في عالم الحيوان.</string>
+    <string name="objective_two">إنشاء ملتقيات لملاك الطيور والمواشي والأسماك والخيول وغيرها.</string>
+    <string name="objective_three">منصة تجمع كل العيادات البيطرية وكل شركات الأدوية والأعلاف وكل ما يخص الحيوانات.</string>
+    <string name="advertisement">الاعلانات</string>
+    <string name="complains">الشكاوي والاقتراحات</string>
+
+    <string name="post_an_advertisement">إضافة إعلان</string>
+    <string name="show_mobile_number">إظهار رقم الجوال</string>
+    <string name="add_title">نص الإعلان</string>
+    <string name="hint_add_title">ادخل نص الإعلان</string>
+    <string name="add_description">وصف الإعلان</string>
+    <string name="hint_add_description">ادخل نص الإعلان</string>
+    <string name="confirm_input">الرجاء التأكد من المدخلات</string>
+    <string name="method_of_communication">طريقة التواصل</string>
+
+    <!--SIGNUP-->
+    <string name="hint_mobile">رقم الهاتف الجوال</string>
+    <string name="hint_full_name">اسم المستخدم</string>
+    <string name="hint_password">كلمه السر</string>
+    <string name="have_an_account">هل لديك حساب؟ تسجيل الدخول</string>
+
+    <!--SEARCH-->
+    <string name="search_button">بحث</string>
+
+    <!--OTP-->
+    <string name="otp_verification">OTP التحقق من</string>
+
+    <!--LOGIN-->
+    <string name="forgot_password">هل نسيت كلمة المرور ؟</string>
+    <string name="dont_have_an_account_register">ليس لديك حساب؟ سجل</string>
+
+    <!--COMMENTS-->
+    <string name="all_cooments">كل التعليقات</string>
+
+    <!--FORGOT PASSWORD-->
+    <string name="hint_enter_mobile_number">أدخل رقم هاتفك المحمول</string>
+    <string name="hint_enter_password">ادخل رقمك السري</string>
+    <string name="send">إرسال</string>
+
+    <!--DELIVERY-->
+    <string name="delivery_orders">اعلاناتي</string>
+    <string name="add_delivery_ad">+اضافة اعلان توصيل</string>
+
+    <!--CHAT-->
+    <string name="title_chat">دردشة</string>
+
+    <!--CHANGE PASSWORD-->
+    <string name="new_password">كلمة سر جديدة</string>
+    <string name="confirm_new_password">تأكيد كلمة المرور الجديدة</string>
+    <string name="change_password">غير كلمة السر</string>
+    <string name="notification_error">لا توجد إشعارات متاحة الآن</string>
+
+    <!--ADD AD-->
+    <string name="post_an_ad">إضافة إعلان</string>
+    <string name="delete_photos">حذف الصور</string>
+    <string name="add_photo">إضافة صورة</string>
+    <string name="sub_category">تصنيف فرعي</string>
+    <string name="title">عنوان</string>
+    <string name="enter_title">أضف عنوان الأعلان</string>
+    <string name="description">وصف</string>
+    <string name="enter_description">اكتب وصفك هنا</string>
+    <string name="select_way_of_communication">التواصل مع البائع</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="allow_comments">تعليقات</string>
+    <string name="allow_messages">الرسائل</string>
+    <string name="allow_whatsapp">تعليقات</string>
+    <string name="show_my_number">إظهار رقم هاتفي</string>
+    <string name="delete_ad">حذف الاعلان</string>
+
+    <string name="simillar_ads">اعلانات مشابهة</string>
+
+    <string name="add_post">اضافة الاعلان</string>
+    <string name="delete_post">حذف الاعلان</string>
+    <string name="send_">إرسال</string>
+    <string name="show_all_comments">عرض كل التعليقات</string>
+</resources>

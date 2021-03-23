@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".fragments.HomeFragment">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/d80"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <FrameLayout
+                    android:id="@+id/searching_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d40"
+                    android:background="@drawable/boder_search"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/btnSearch"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:src="@drawable/ic_search"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/searchET"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/d50"
+                        android:layout_marginRight="@dimen/d15"
+                        android:layout_toRightOf="@+id/btnSearch"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/d30"
+                        android:paddingRight="@dimen/dt10"
+                        android:singleLine="true"
+                        android:text="اكتب كلمة البحث‎"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="13sp" />
+                </FrameLayout>
+
+
+                <!--            <com.google.android.material.tabs.TabLayout-->
+                <!--                android:layout_marginBottom="@dimen/d8"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:background="@color/white_smoke"-->
+                <!--                app:tabMode="scrollable"-->
+                <!--                app:tabBackground="@drawable/home_fragment_tabborder"-->
+                <!--                app:tabSelectedTextColor="#009FE3"-->
+                <!--                app:tabTextColor="@color/gray_text"-->
+                <!--                app:tabGravity="start"-->
+                <!--                app:tabTextAppearance="@style/MyTabLayoutTextAppearance"-->
+                <!--                app:tabIndicatorHeight="5dp"-->
+                <!--                android:layout_below="@id/top_layout"-->
+                <!--                android:id="@+id/tab_layout2"/>-->
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="30dp"
+                    android:clipChildren="false"
+                    app:auto_cycle="true"
+                    app:corner_radius="100"
+                    app:delay="0"
+                    app:error_image="@drawable/placeholder"
+                    app:period="1000"
+                    app:placeholder="@drawable/placeholder"
+                    app:selected_dot="@drawable/selected_dot"
+                    app:unselected_dot="@drawable/un_selected_dot" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/category_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="@dimen/dt10"
+                    android:layout_marginBottom="@dimen/dt10"
+                    android:background="@color/white"
+                    android:scrollbars="none" />
+
+                <!--                android:background="@color/appColor"-->
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/new_sub_category_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dt10"
+                    android:scrollbars="none" />
+
+                <LinearLayout
+                    android:id="@+id/linSubCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/subCategoryRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/appColor"
+                        android:scrollbars="none" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/home_data_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/tab_layout"
+                        android:background="@color/white"
+                        android:paddingLeft="@dimen/dt10"
+                        android:paddingRight="@dimen/dt10"
+                        android:scrollbars="none"
+                        app:spanCount="2" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d80"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/add_ad"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:adjustViewBounds="true"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/add_ad" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:text="ZOOLIFE"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/search_post"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:adjustViewBounds="true"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/explore" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</FrameLayout>
