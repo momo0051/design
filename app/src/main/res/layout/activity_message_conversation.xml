@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MessageConversationActivity">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d50"
+        android:background="#009FE3"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/backMessageBtn"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/d25"
+                android:layout_height="@dimen/d25"
+                android:layout_gravity="center"
+                android:src="@drawable/right_arrow" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="مدينة الرياض"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/d25"
+                android:layout_height="@dimen/d25"
+                android:layout_gravity="center"
+                android:src="@drawable/information"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_above="@+id/textLayout"
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:hint="@string/search"
+        android:textSize="13sp"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:background="@null"
+        android:layout_centerVertical="true"/>
+
+    <RelativeLayout
+        android:id="@+id/textLayout"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_above="@+id/search_bar"
+        android:layout_marginEnd="@dimen/d80"
+        android:layout_marginStart="@dimen/d10"
+        android:background="@drawable/message_background">
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sample_text"
+            android:textSize="17sp"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="start"
+            android:textColor="@color/white"
+            android:background="@null"
+            android:paddingStart="@dimen/d10"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_below="@+id/editText"
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="زمن"
+            android:textSize="13sp"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="start"
+            android:textColor="@color/ivory"
+            android:background="@null"
+            android:layout_marginTop="@dimen/d10"
+            android:paddingStart="@dimen/d10"
+            android:layout_centerVertical="true"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/grid_bg"
+        android:layout_marginStart="@dimen/d10"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/d10"
+        android:id="@+id/search_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="@dimen/d15"
+                android:background="@color/grey_10"
+                android:paddingStart="@dimen/d30"
+                android:layout_below="@id/search_bar">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/grey_10"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/plus"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        app:tint="@color/gray"
+                        android:id="@+id/btnSearch"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/write_message"
+                        android:textSize="17sp"
+                        android:layout_toRightOf="@+id/btnSearch"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="start"
+                        android:textAlignment="viewStart"
+                        android:singleLine="true"
+                        android:background="@null"
+                        android:paddingStart="@dimen/d30"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

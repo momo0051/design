@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.OTPVerification">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="10dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_title_icon" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_otp"
+            android:layout_below="@+id/iv_logo"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginBottom="@dimen/d50"
+                android:text="@string/otp_message_1"
+                android:textColor="@color/light_slate_gray"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_line1"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginBottom="@dimen/d50"
+                android:text="@string/otp_message_2"
+                android:textColor="@color/light_slate_gray"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/d50"
+                android:text="@string/otp_verification"
+                android:textColor="@color/light_slate_gray"
+                android:textSize="@dimen/d30"
+                android:textStyle="bold" />
+
+            <com.mukesh.OtpView
+                android:id="@+id/otp_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:alpha=".8"
+                android:inputType="number"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                app:OtpHideLineWhenFilled="true"
+                app:OtpItemCount="6"
+                app:OtpItemRadius="@dimen/dpoit1"
+                app:OtpItemSpacing="6dp"
+                app:OtpLineColor="@color/dark_slate_blue"
+                app:OtpState_filled="true"
+                app:OtpViewType="line" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/otpTV"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="@dimen/d50"
+            android:gravity="center"
+            android:text="OTP"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_otp"
+            android:layout_marginTop="20dp">
+
+            <RelativeLayout
+                android:id="@+id/signupButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/loginTextview"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="70dp"
+                android:background="@drawable/bg_btn_blue">
+
+                <TextView
+                    android:id="@+id/tv_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/log_in"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_start"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/tv_start"
+                    android:src="@drawable/ic_start_arrow_right" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/loginTextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/d15"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/have_an_account"
+                android:textColor="@color/light_slate_gray"
+                android:textSize="13sp"
+                tools:ignore="MissingPrefix" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

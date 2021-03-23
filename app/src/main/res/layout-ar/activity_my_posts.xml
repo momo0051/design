@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d60"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/backBtn"
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_back_icon" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/toolbar_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="@string/my_ads"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/app_bg"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d40"
+                        android:background="@drawable/boder_search"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/btnSearch"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:src="@drawable/ic_search"
+                            app:tint="@color/white" />
+
+                        <EditText
+                            android:id="@+id/searchET"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/d50"
+                            android:layout_marginRight="@dimen/d15"
+                            android:layout_toRightOf="@+id/btnSearch"
+                            android:background="@null"
+                            android:hint="اكتب كلمة البحث‎"
+                            android:paddingStart="@dimen/d30"
+                            android:paddingRight="@dimen/dt10"
+                            android:singleLine="true"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white"
+                            android:textSize="13sp" />
+                    </FrameLayout>
+
+
+                    <!--            <com.google.android.material.tabs.TabLayout-->
+                    <!--                android:layout_marginBottom="@dimen/d8"-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:background="@color/white_smoke"-->
+                    <!--                app:tabMode="scrollable"-->
+                    <!--                app:tabBackground="@drawable/home_fragment_tabborder"-->
+                    <!--                app:tabSelectedTextColor="#009FE3"-->
+                    <!--                app:tabTextColor="@color/gray_text"-->
+                    <!--                app:tabGravity="start"-->
+                    <!--                app:tabTextAppearance="@style/MyTabLayoutTextAppearance"-->
+                    <!--                app:tabIndicatorHeight="5dp"-->
+                    <!--                android:layout_below="@id/top_layout"-->
+                    <!--                android:id="@+id/tab_layout2"/>-->
+
+                    <!--                <androidx.recyclerview.widget.RecyclerView-->
+                    <!--                    android:id="@+id/category_rv"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="match_parent"-->
+                    <!--                    android:scrollbars="none"-->
+                    <!--                    android:layout_marginTop="@dimen/dt10"-->
+                    <!--                    android:layout_gravity="end"-->
+                    <!--                    android:layout_marginBottom="@dimen/dt10"-->
+                    <!--                    android:background="@color/appColor"-->
+                    <!--                    />-->
+
+
+                    <!--                <androidx.recyclerview.widget.RecyclerView-->
+                    <!--                    android:id="@+id/new_sub_category_rv"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="match_parent"-->
+                    <!--                    android:scrollbars="none"-->
+                    <!--                    android:background="@color/appColor"-->
+                    <!--                    android:layout_marginBottom="@dimen/dt10"-->
+                    <!--                    />-->
+
+                    <!--                <LinearLayout-->
+                    <!--                    android:id="@+id/linSubCategory"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="60dp"-->
+                    <!--                    android:gravity="center"-->
+                    <!--                    android:visibility="gone"-->
+                    <!--                    android:orientation="vertical">-->
+
+                    <!--                    <androidx.recyclerview.widget.RecyclerView-->
+                    <!--                        android:id="@+id/subCategoryRecyclerView"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginLeft="5dp"-->
+                    <!--                        android:scrollbars="none"-->
+                    <!--                        android:background="@color/appColor"-->
+                    <!--                        android:layout_marginRight="5dp" />-->
+
+                    <!--                </LinearLayout>-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/home_data_rv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
+                            android:paddingLeft="@dimen/dt10"
+                            android:paddingRight="@dimen/dt10"
+                            android:scrollbars="none" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</FrameLayout>

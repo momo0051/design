@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "506519096438",
+    "firebase_url": "https://zoolife-371fe.firebaseio.com",
+    "project_id": "zoolife-371fe",
+    "storage_bucket": "zoolife-371fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506519096438:android:0120adeb6dcc512db9a357",
+        "android_client_info": {
+          "package_name": "com.zoo.life"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "506519096438-9vta381umv0qg2eec8mqd49abnm4952j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zoo.life",
+            "certificate_hash": "4b879445464aeb95913a3b3d3c6a0ec1a89689af"
+          }
+        },
+        {
+          "client_id": "506519096438-c0k5pioupc13pefcou15u0ih41lqqrvh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwNZGeUacw2fQrg53kO3XR1DrbsUocdl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "506519096438-c0k5pioupc13pefcou15u0ih41lqqrvh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "506519096438-klvlepe9vblh3l15srekoio017biu77e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.zoolife.app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506519096438:android:6be29352a1ed5b39b9a357",
+        "android_client_info": {
+          "package_name": "com.zoolife.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "506519096438-76bo1rh4drvpe6cpkmpjhsr116k9ogj9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zoolife.app",
+            "certificate_hash": "666cfa00d6d1e2d10a10615c6a58a7ea2ec16f15"
+          }
+        },
+        {
+          "client_id": "506519096438-c0k5pioupc13pefcou15u0ih41lqqrvh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwNZGeUacw2fQrg53kO3XR1DrbsUocdl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "506519096438-c0k5pioupc13pefcou15u0ih41lqqrvh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "506519096438-klvlepe9vblh3l15srekoio017biu77e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.zoolife.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
